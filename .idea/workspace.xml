@@ -1,7 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6db55123-b21e-4406-8089-b27698395657" name="Default Changelist" comment="" />
+    <list default="true" id="6db55123-b21e-4406-8089-b27698395657" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Api/ApiBase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Api/AyssoftIkApi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Api/AyssoftTakipApi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/Main.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/CallApi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ayssoftcrm.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lastupdates.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newcards.rar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TvPanel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TvPanel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Helpers/General.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Helpers/General.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_20_113704_create_televisions_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/tv/sections/section1.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/tv/sections/section1.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/tv/sections/section2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/tv/sections/section2.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +52,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -122,14 +167,19 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1kSbjox4xgn1s4tU0M4v5alvQD6" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ik" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/pages" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -143,10 +193,11 @@
       <recent name="C:\Users\talha\PhpstormProjects\ayssoftcrm\resources\views\pages\tv\tvs" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\talha\PhpstormProjects\ayssoftcrm\resources\views\pages" />
+      <recent name="C:\Users\talha\PhpstormProjects\ayssoftcrm\app\Http\Api" />
+      <recent name="C:\Users\talha\PhpstormProjects\ayssoftcrm\app\Http\Helpers" />
+      <recent name="C:\Users\talha\PhpstormProjects\ayssoftcrm\app\Http\Controllers\Api" />
       <recent name="C:\Users\talha\PhpstormProjects\ayssoftcrm\resources\views\pages\tv\sections" />
-      <recent name="C:\Users\talha\PhpstormProjects\ayssoftcrm\resources\views\pages\tv" />
-      <recent name="C:\Users\talha\PhpstormProjects\ayssoftcrm\resources\views\layouts" />
-      <recent name="C:\Users\talha\PhpstormProjects\ayssoftcrm\public\assets\crm" />
     </key>
   </component>
   <component name="RunManager">
@@ -166,33 +217,69 @@
       <workItem from="1605697078284" duration="12967000" />
       <workItem from="1605765868603" duration="21855000" />
       <workItem from="1605852622287" duration="25039000" />
-      <workItem from="1605939216962" duration="1870000" />
+      <workItem from="1605939216962" duration="29074000" />
+      <workItem from="1606038664284" duration="12323000" />
+      <workItem from="1606125553603" duration="554000" />
+      <workItem from="1606207651041" duration="10093000" />
+      <workItem from="1606311224059" duration="607000" />
+      <workItem from="1606370102767" duration="8765000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="745" y="315" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605697740847">
+    <state x="586" y="218" key="#Inspections" timestamp="1606376467377">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="745" y="315" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1605697740847" />
-    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605706981620">
+    <state x="586" y="218" key="#Inspections/0.0.1920.1080@0.0.1920.1080" timestamp="1606376467377" />
+    <state x="414" y="195" width="1092" height="752" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606377205417">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1605706981620" />
-    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1605881281722">
+    <state x="414" y="195" width="1092" height="752" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606377205417" />
+    <state x="745" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606371907461">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1605881281722" />
-    <state x="694" y="263" key="NewPhpClassDialog" timestamp="1605710841276">
+    <state x="745" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606371907461" />
+    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606213816274">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="694" y="263" key="NewPhpClassDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1605710841276" />
+    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606213816274" />
+    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1606371551474">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1606371551474" />
+    <state x="540" y="275" key="IDE.errors.dialog" timestamp="1606377152796">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="540" y="275" key="IDE.errors.dialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606377152796" />
+    <state x="694" y="263" key="NewPhpClassDialog" timestamp="1605953186837">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="694" y="263" key="NewPhpClassDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1605953186837" />
     <state x="667" y="273" width="585" height="534" key="find.popup" timestamp="1605795946852">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="667" y="273" width="585" height="534" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1605795946852" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1605960499899">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1605960499899" />
   </component>
 </project>

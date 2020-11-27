@@ -22,7 +22,7 @@
 
             <div class="card">
 
-                <div class="card-header text-center">
+                <div class="card-header text-center" style="padding : 1rem 1.25rem">
                     <h1 style="font-size: 36px">
                         <span class="svg-icon svg-icon-dark svg-icon-4x">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -40,13 +40,13 @@
 
                 <div class="card-body">
 
-                    <div class="card card-custom bg-gray-100 card-stretch gutter-b">
+                    <div class="card card-custom bg-gray-100 card-stretch gutter-b mt-n9">
                         <!--begin::Header-->
-                        <div id="kt_mixed_widget_1_chart_top" class="card-header text-center border-0 @if($totalQuee >= 10) mydisco @else bg-dark-75 @endif pt-10">
+                        <div id="kt_mixed_widget_1_chart_top" class="card-header text-center border-0 pt-10">
                             <h1 style="font-size: 30px; color: white"></h1>
                             <div>
                                 <h2 style="float: left;color: white; font-size: 36px">Toplam: &nbsp;</h2>
-                                <h1 id="total_quee_span" style="font-size: 40px; color: white;float: left">{{ $totalQuee }}</h1>
+                                <h1 id="total_quee_span" style="font-size: 40px; color: white;float: left"></h1>
                             </div>
                             <h1 style="font-size: 30px; color: white"></h1>
                         </div>
@@ -54,22 +54,22 @@
                         <!--begin::Body-->
                         <div class="card-body p-0 position-relative overflow-hidden">
                             <!--begin::Chart-->
-                            <div id="kt_mixed_widget_1_chart_bottom" class="card-rounded-bottom @if($totalQuee >= 10) mydisco @else bg-dark-75 @endif" style="height: 20px"></div>
+                            <div id="kt_mixed_widget_1_chart_bottom" class="card-rounded-bottom" style="height: 20px"></div>
                             <!--end::Chart-->
                             <!--begin::Stats-->
                             <div class="card-spacer mt-0 pt-0">
 
                                 <div class="row m-0">
-                                    <div id="iuyum_waiting_card" style="@if($response['iuyum']['bekleyen'] >= 5) background-color: #cc0000 @elseif($response['iuyum']['bekleyen'] > 0) background-color: #ff5900; @else background-color: #505050; @endif" class="col px-6 py-8 rounded-xl mr-7 mb-7">
+                                    <div id="iuyum_waiting_card" style="" class="col px-6 py-8 rounded-xl mr-7 mb-7">
                                        <span class="svg-icon svg-icon-2x svg-icon-dark d-block text-center text-white">
-                                           <span id="iuyum_waiting_span" style="font-size: 45px;">{{ $response['iuyum']['bekleyen'] }}</span>
+                                           <span id="iuyum_waiting_span" style="font-size: 45px;">--</span>
                                            <br>
                                            <span class="text-white font-weight-bold font-size-h4">I-Uyum</span>
                                         </span>
                                     </div>
-                                    <div id="efaturaearsiv_waiting_card" style="@if($response['efaturaearsiv']['bekleyen'] >= 5) background-color: #cc0000 @elseif($response['efaturaearsiv']['bekleyen'] > 0) background-color: #ff5900; @else background-color: #505050; @endif" class="col px-6 py-8 rounded-xl mr-7 mb-7">
+                                    <div id="efaturaearsiv_waiting_card" style="" class="col px-6 py-8 rounded-xl mr-7 mb-7">
                                        <span class="svg-icon svg-icon-2x svg-icon-dark d-block text-center text-white">
-                                           <span id="efaturaearsiv_waiting_span" style="font-size: 45px;">{{ $response['efaturaearsiv']['bekleyen'] }}</span>
+                                           <span id="efaturaearsiv_waiting_span" style="font-size: 45px;">--</span>
                                            <br>
                                            <span class="text-white font-weight-bold font-size-h4">E-Fatura | E-Arşiv</span>
                                         </span>
@@ -78,17 +78,17 @@
                                 </div>
 
                                 <div class="row m-0">
-                                    <div id="hesapaktivasyon_waiting_card" style="@if($response['hesapaktivasyon']['bekleyen'] >= 5) background-color: #cc0000 @elseif($response['hesapaktivasyon']['bekleyen'] > 0) background-color: #ff5900; @else background-color: #505050; @endif" class="col px-6 py-8 rounded-xl mr-7 mb-7">
+                                    <div id="hesapaktivasyon_waiting_card"  class="col px-6 py-8 rounded-xl mr-7 mb-7">
                                        <span class="svg-icon svg-icon-2x svg-icon-dark d-block text-center text-white">
-                                           <span id="hesapaktivasyon_waiting_span" style="font-size: 45px;">{{ $response['hesapaktivasyon']['bekleyen'] }}</span>
+                                           <span id="hesapaktivasyon_waiting_span" style="font-size: 45px;">--</span>
                                            <br>
                                            <span class="text-white font-weight-bold font-size-h4">Hesap Aktivasyon</span>
                                         </span>
 
                                     </div>
-                                    <div id="eirsaliyehesapacilis_waiting_card" style="@if($response['eirsaliyehesapacilis']['bekleyen'] >= 5) background-color: #cc0000 @elseif($response['eirsaliyehesapacilis']['bekleyen'] > 0) background-color: #ff5900; @else background-color: #505050; @endif" class="col px-6 py-8 rounded-xl mr-7 mb-7">
+                                    <div id="eirsaliyehesapacilis_waiting_card"  class="col px-6 py-8 rounded-xl mr-7 mb-7">
                                        <span class="svg-icon svg-icon-2x svg-icon-dark d-block text-center text-white">
-                                           <span id="eirsaliyehesapacilis_waiting_span" style="font-size: 45px;">{{ $response['eirsaliyehesapacilis']['bekleyen'] }}</span>
+                                           <span id="eirsaliyehesapacilis_waiting_span" style="font-size: 45px;">--</span>
                                            <br>
                                            <span class="text-white font-weight-bold font-size-h4">İrsaliye Aktivasyon</span>
                                         </span>
@@ -97,17 +97,17 @@
                                 </div>
 
                                 <div class="row m-0">
-                                    <div id="eirsaliyedestek_waiting_card" style="@if($response['eirsaliyedestek']['bekleyen'] >= 5) background-color: #cc0000 @elseif($response['eirsaliyedestek']['bekleyen'] > 0) background-color: #ff5900; @else background-color: #505050; @endif" class="col px-6 py-8 rounded-xl mr-7 mb-7">
+                                    <div id="eirsaliyedestek_waiting_card"  class="col px-6 py-8 rounded-xl mr-7 mb-7">
                                        <span class="svg-icon svg-icon-2x svg-icon-dark d-block text-center text-white">
-                                           <span id="eirsaliyedestek_waiting_span" style="font-size: 45px;">{{ $response['eirsaliyedestek']['bekleyen'] }}</span>
+                                           <span id="eirsaliyedestek_waiting_span" style="font-size: 45px;">--</span>
                                            <br>
                                            <span class="text-white font-weight-bold font-size-h4">E-İrsaliye Destek</span>
                                         </span>
 
                                     </div>
-                                    <div id="edefter_waiting_card" style="@if($response['edefter']['bekleyen'] >= 5) background-color: #cc0000 @elseif($response['edefter']['bekleyen'] > 0) background-color: #ff5900; @else background-color: #505050; @endif" class="col px-6 py-8 rounded-xl mr-7 mb-7">
+                                    <div id="edefter_waiting_card"  class="col px-6 py-8 rounded-xl mr-7 mb-7">
                                        <span class="svg-icon svg-icon-2x svg-icon-dark d-block text-center text-white">
-                                           <span id="edefter_waiting_span" style="font-size: 45px;">{{ $response['edefter']['bekleyen'] }}</span>
+                                           <span id="edefter_waiting_span" style="font-size: 45px;">--</span>
                                            <br>
                                            <span class="text-white font-weight-bold font-size-h4">E-Defter</span>
                                         </span>
@@ -116,17 +116,17 @@
                                 </div>
 
                                 <div class="row m-0">
-                                    <div id="edefterimzalama_waiting_card" style="@if($response['edefterimzalama']['bekleyen'] >= 5) background-color: #cc0000 @elseif($response['edefterimzalama']['bekleyen'] > 0) background-color: #ff5900; @else background-color: #505050; @endif" class="col px-6 py-8 rounded-xl mr-7 mb-7">
+                                    <div id="edefterimzalama_waiting_card"  class="col px-6 py-8 rounded-xl mr-7 mb-7">
                                        <span class="svg-icon svg-icon-2x svg-icon-dark d-block text-center text-white">
-                                           <span id="edefterimzalama_waiting_span" style="font-size: 45px;">{{ $response['edefterimzalama']['bekleyen'] }}</span>
+                                           <span id="edefterimzalama_waiting_span" style="font-size: 45px;">--</span>
                                            <br>
                                            <span class="text-white font-weight-bold font-size-h4">E-Defter İmzalama</span>
                                         </span>
 
                                     </div>
-                                    <div id="ekocari_waiting_card" style="@if($response['ekocari']['bekleyen'] >= 5) background-color: #cc0000 @elseif($response['ekocari']['bekleyen'] > 0) background-color: #ff5900; @else background-color: #505050; @endif" class="col px-6 py-8 rounded-xl mr-7 mb-7">
+                                    <div id="ekocari_waiting_card"  class="col px-6 py-8 rounded-xl mr-7 mb-7">
                                        <span class="svg-icon svg-icon-2x svg-icon-dark d-block text-center text-white">
-                                           <span id="ekocari_waiting_span" style="font-size: 45px;">{{ $response['ekocari']['bekleyen'] }}</span>
+                                           <span id="ekocari_waiting_span" style="font-size: 45px;">--</span>
                                            <br>
                                            <span class="text-white font-weight-bold font-size-h4">Ekocari</span>
                                         </span>
@@ -150,7 +150,7 @@
 
             <div class="card">
 
-                <div class="card-header text-center">
+                <div class="card-header text-center" style="padding : 1rem 1.25rem">
                     <h1 style="font-size: 40px">
                         <span class="svg-icon svg-icon-dark svg-icon-4x">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -168,13 +168,13 @@
 
                 <div class="card-body">
 
-                    <div class="card card-custom bg-gray-100 card-stretch gutter-b">
+                    <div class="card card-custom bg-gray-100 card-stretch gutter-b mt-n9">
                         <!--begin::Header-->
-                        <div id="kt_mixed_widget_3_chart_top" class="card-header text-center border-0 @if($totalLost >= 50) mydisco @else bg-dark-75 @endif pt-10">
+                        <div id="kt_mixed_widget_3_chart_top" class="card-header text-center border-0 pt-10">
                             <h1 style="font-size: 30px; color: white"></h1>
                             <div>
                                 <h2 style="float: left;color: white; font-size: 36px">Toplam: &nbsp;</h2>
-                                <h1 id="total_lost_span" style="font-size: 40px; color: white;float: left">{{ $totalLost }}</h1>
+                                <h1 id="total_lost_span" style="font-size: 40px; color: white;float: left">-</h1>
                             </div>
                             <h1 style="font-size: 30px; color: white"></h1>
                         </div>
@@ -182,23 +182,23 @@
                         <!--begin::Body-->
                         <div class="card-body p-0 position-relative overflow-hidden">
                             <!--begin::Chart-->
-                            <div id="kt_mixed_widget_3_chart_bottom" class="card-rounded-bottom @if($totalLost >= 10) mydisco @else bg-dark-75 @endif" style="height: 20px"></div>
+                            <div id="kt_mixed_widget_3_chart_bottom" class="card-rounded-bottom" style="height: 20px"></div>
                             <!--end::Chart-->
                             <!--begin::Stats-->
                             <div class="card-spacer">
 
                                 <div class="row m-0">
-                                    <div id="iuyum_lost_card" style="@if($response['iuyum']['terkedilmis'] - $response['iuyum']['callback'] >= 5) background-color: #cc0000 @elseif($response['iuyum']['terkedilmis'] - $response['iuyum']['callback'] > 0) background-color: #ff5900; @else background-color: #505050; @endif" class="col px-6 py-8 rounded-xl mr-7 mb-7">
+                                    <div id="iuyum_lost_card"  class="col px-6 py-8 rounded-xl mr-7 mb-7">
                                        <span class="svg-icon svg-icon-2x svg-icon-dark d-block text-center text-white">
-                                           <span id="iuyum_lost_span" style="font-size: 45px;">{{ $response['iuyum']['terkedilmis'] - $response['iuyum']['callback'] }}</span>
+                                           <span id="iuyum_lost_span" style="font-size: 45px;">--</span>
                                            <br>
                                            <span class="text-white font-weight-bold font-size-h4">I-Uyum</span>
                                         </span>
 
                                     </div>
-                                    <div id="efaturaearsiv_lost_card" style="@if($response['efaturaearsiv']['terkedilmis'] - $response['efaturaearsiv']['callback'] >= 5) background-color: #cc0000 @elseif($response['efaturaearsiv']['terkedilmis'] - $response['efaturaearsiv']['callback'] > 0) background-color: #ff5900; @else background-color: #505050; @endif" class="col px-6 py-8 rounded-xl mr-7 mb-7">
+                                    <div id="efaturaearsiv_lost_card"  class="col px-6 py-8 rounded-xl mr-7 mb-7">
                                        <span class="svg-icon svg-icon-2x svg-icon-dark d-block text-center text-white">
-                                           <span id="efaturaearsiv_lost_span" style="font-size: 45px;">{{ $response['efaturaearsiv']['terkedilmis'] - $response['efaturaearsiv']['callback'] }}</span>
+                                           <span id="efaturaearsiv_lost_span" style="font-size: 45px;">--</span>
                                            <br>
                                            <span class="text-white font-weight-bold font-size-h4">E-Fatura | E-Arşiv</span>
                                         </span>
@@ -207,17 +207,17 @@
                                 </div>
 
                                 <div class="row m-0">
-                                    <div id="hesapaktivasyon_lost_card" style="@if($response['hesapaktivasyon']['terkedilmis'] - $response['hesapaktivasyon']['callback'] >= 5) background-color: #cc0000 @elseif($response['hesapaktivasyon']['terkedilmis'] - $response['hesapaktivasyon']['callback'] > 0) background-color: #ff5900; @else background-color: #505050; @endif" class="col px-6 py-8 rounded-xl mr-7 mb-7">
+                                    <div id="hesapaktivasyon_lost_card"  class="col px-6 py-8 rounded-xl mr-7 mb-7">
                                        <span class="svg-icon svg-icon-2x svg-icon-dark d-block text-center text-white">
-                                           <span id="hesapaktivasyon_lost_span" style="font-size: 45px;">{{ $response['hesapaktivasyon']['terkedilmis'] - $response['hesapaktivasyon']['callback'] }}</span>
+                                           <span id="hesapaktivasyon_lost_span" style="font-size: 45px;">--</span>
                                            <br>
                                            <span class="text-white font-weight-bold font-size-h4">Hesap Aktivasyon</span>
                                         </span>
 
                                     </div>
-                                    <div id="eirsaliyehesapacilis_lost_card" style="@if($response['eirsaliyehesapacilis']['terkedilmis'] - $response['eirsaliyehesapacilis']['callback'] >= 5) background-color: #cc0000 @elseif($response['eirsaliyehesapacilis']['terkedilmis'] - $response['eirsaliyehesapacilis']['callback'] > 0) background-color: #ff5900; @else background-color: #505050; @endif" class="col px-6 py-8 rounded-xl mr-7 mb-7">
+                                    <div id="eirsaliyehesapacilis_lost_card"  class="col px-6 py-8 rounded-xl mr-7 mb-7">
                                        <span class="svg-icon svg-icon-2x svg-icon-dark d-block text-center text-white">
-                                           <span id="eirsaliyehesapacilis_lost_span" style="font-size: 45px;">{{ $response['eirsaliyehesapacilis']['terkedilmis'] - $response['eirsaliyehesapacilis']['callback'] }}</span>
+                                           <span id="eirsaliyehesapacilis_lost_span" style="font-size: 45px;">--</span>
                                            <br>
                                            <span class="text-white font-weight-bold font-size-h4">İrsaliye Aktivasyon</span>
                                         </span>
@@ -226,17 +226,17 @@
                                 </div>
 
                                 <div class="row m-0">
-                                    <div id="eirsaliyedestek_lost_card" style="@if($response['eirsaliyedestek']['terkedilmis'] - $response['eirsaliyedestek']['callback'] >= 5) background-color: #cc0000 @elseif($response['eirsaliyedestek']['terkedilmis'] - $response['eirsaliyedestek']['callback'] > 0) background-color: #ff5900; @else background-color: #505050; @endif" class="col px-6 py-8 rounded-xl mr-7 mb-7">
+                                    <div id="eirsaliyedestek_lost_card"  class="col px-6 py-8 rounded-xl mr-7 mb-7">
                                        <span class="svg-icon svg-icon-2x svg-icon-dark d-block text-center text-white">
-                                           <span id="eirsaliyedestek_lost_span" style="font-size: 45px;">{{ $response['eirsaliyedestek']['terkedilmis'] - $response['eirsaliyedestek']['callback'] }}</span>
+                                           <span id="eirsaliyedestek_lost_span" style="font-size: 45px;">--</span>
                                            <br>
                                            <span class="text-white font-weight-bold font-size-h4">E-İrsaliye Destek</span>
                                         </span>
 
                                     </div>
-                                    <div id="edefter_lost_card" style="@if($response['edefter']['terkedilmis'] - $response['edefter']['callback'] >= 5) background-color: #cc0000 @elseif($response['edefter']['terkedilmis'] - $response['edefter']['callback'] > 0) background-color: #ff5900; @else background-color: #505050; @endif" class="col px-6 py-8 rounded-xl mr-7 mb-7">
+                                    <div id="edefter_lost_card" class="col px-6 py-8 rounded-xl mr-7 mb-7">
                                        <span class="svg-icon svg-icon-2x svg-icon-dark d-block text-center text-white">
-                                           <span id="edefter_lost_span" style="font-size: 45px;">{{ $response['edefter']['terkedilmis'] - $response['edefter']['callback'] }}</span>
+                                           <span id="edefter_lost_span" style="font-size: 45px;">--</span>
                                            <br>
                                            <span class="text-white font-weight-bold font-size-h4">E-Defter</span>
                                         </span>
@@ -245,17 +245,17 @@
                                 </div>
 
                                 <div class="row m-0">
-                                    <div id="edefterimzalama_lost_card" style="@if($response['edefterimzalama']['terkedilmis'] - $response['edefterimzalama']['callback'] >= 5) background-color: #cc0000 @elseif($response['edefterimzalama']['terkedilmis'] - $response['edefterimzalama']['callback'] > 0) background-color: #ff5900; @else background-color: #505050; @endif" class="col px-6 py-8 rounded-xl mr-7 mb-7">
+                                    <div id="edefterimzalama_lost_card" class="col px-6 py-8 rounded-xl mr-7 mb-7">
                                        <span class="svg-icon svg-icon-2x svg-icon-dark d-block text-center text-white">
-                                           <span id="edefterimzalama_lost_span" style="font-size: 45px;">{{ $response['edefterimzalama']['terkedilmis'] - $response['edefterimzalama']['callback'] }}</span>
+                                           <span id="edefterimzalama_lost_span" style="font-size: 45px;">--</span>
                                            <br>
                                            <span class="text-white font-weight-bold font-size-h4">E-Defter İmzalama</span>
                                         </span>
 
                                     </div>
-                                    <div id="ekocari_lost_card" style="@if($response['ekocari']['terkedilmis'] - $response['ekocari']['callback'] >= 5) background-color: #cc0000 @elseif($response['ekocari']['terkedilmis'] - $response['ekocari']['callback'] > 0) background-color: #ff5900; @else background-color: #505050; @endif" class="col px-6 py-8 rounded-xl mr-7 mb-7">
+                                    <div id="ekocari_lost_card" class="col px-6 py-8 rounded-xl mr-7 mb-7">
                                        <span class="svg-icon svg-icon-2x svg-icon-dark d-block text-center text-white">
-                                           <span id="ekocari_lost_span" style="font-size: 45px;">{{ $response['ekocari']['terkedilmis'] - $response['ekocari']['callback'] }}</span>
+                                           <span id="ekocari_lost_span" style="font-size: 45px;">--</span>
                                            <br>
                                            <span class="text-white font-weight-bold font-size-h4">Ekocari</span>
                                         </span>
@@ -280,7 +280,7 @@
 
             <div class="card">
 
-                <div class="card-header text-center">
+                <div class="card-header text-center" style="padding : 1rem 1.25rem">
                     <h1 style="font-size: 40px">
                         <span class="svg-icon svg-icon-dark svg-icon-4x">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -304,99 +304,27 @@
 
                 <div class="card-body">
 
-                    <div class="card card-custom bg-gray-100 card-stretch gutter-b">
+                    <div class="card card-custom bg-gray-100 card-stretch gutter-b mt-n9">
                         <!--begin::Header-->
                         <div id="kt_mixed_widget_4_chart_top" class="card-header text-center border-0 bg-dark-75 pt-10">
                             <h1 style="font-size: 30px; color: white"></h1>
                             <div>
                                 <h2 style="float: left;color: white; font-size: 36px">Toplam: &nbsp;</h2>
-                                <h1 id="total_job_span" style="font-size: 40px; color: white;float: left">0</h1>
+                                <h1 id="total_job_span" style="font-size: 40px; color: white;float: left">--</h1>
                             </div>
                             <h1 style="font-size: 30px; color: white"></h1>
                         </div>
                         <!--end::Header-->
                         <!--begin::Body-->
-                        <div class="card-body p-0 position-relative overflow-hidden">
+                        <div class="card-body p-0">
                             <!--begin::Chart-->
                             <div id="kt_mixed_widget_4_chart_bottom" class="card-rounded-bottom bg-dark-75" style="height: 20px"></div>
                             <!--end::Chart-->
                             <!--begin::Stats-->
                             <div class="card-spacer">
 
-                                <div class="row m-0">
-                                    <div id="job_1_card" style="@if($response['iuyum']['terkedilmis'] - $response['iuyum']['callback'] >= 5) background-color: #cc0000 @elseif($response['iuyum']['terkedilmis'] - $response['iuyum']['callback'] > 0) background-color: #ff5900; @else background-color: #505050; @endif" class="col px-6 py-8 rounded-xl mr-7 mb-7">
-                                       <span class="svg-icon svg-icon-2x svg-icon-dark d-block text-center text-white">
-                                           <span id="iuyum_lost_span" style="font-size: 45px;">0</span>
-                                           <br>
-                                           <span class="text-white font-weight-bold font-size-h4">İş 1</span>
-                                        </span>
+                                <div class="row" id="all_jobs_row">
 
-                                    </div>
-                                    <div id="job_1_card" style="@if($response['iuyum']['terkedilmis'] - $response['iuyum']['callback'] >= 5) background-color: #cc0000 @elseif($response['iuyum']['terkedilmis'] - $response['iuyum']['callback'] > 0) background-color: #ff5900; @else background-color: #505050; @endif" class="col px-6 py-8 rounded-xl mr-7 mb-7">
-                                       <span class="svg-icon svg-icon-2x svg-icon-dark d-block text-center text-white">
-                                           <span id="iuyum_lost_span" style="font-size: 45px;">0</span>
-                                           <br>
-                                           <span class="text-white font-weight-bold font-size-h4">İş 1</span>
-                                        </span>
-
-                                    </div>
-                                </div>
-
-                                <div class="row m-0">
-                                    <div id="job_1_card" style="@if($response['iuyum']['terkedilmis'] - $response['iuyum']['callback'] >= 5) background-color: #cc0000 @elseif($response['iuyum']['terkedilmis'] - $response['iuyum']['callback'] > 0) background-color: #ff5900; @else background-color: #505050; @endif" class="col px-6 py-8 rounded-xl mr-7 mb-7">
-                                       <span class="svg-icon svg-icon-2x svg-icon-dark d-block text-center text-white">
-                                           <span id="iuyum_lost_span" style="font-size: 45px;">0</span>
-                                           <br>
-                                           <span class="text-white font-weight-bold font-size-h4">İş 1</span>
-                                        </span>
-
-                                    </div>
-                                    <div id="job_1_card" style="@if($response['iuyum']['terkedilmis'] - $response['iuyum']['callback'] >= 5) background-color: #cc0000 @elseif($response['iuyum']['terkedilmis'] - $response['iuyum']['callback'] > 0) background-color: #ff5900; @else background-color: #505050; @endif" class="col px-6 py-8 rounded-xl mr-7 mb-7">
-                                       <span class="svg-icon svg-icon-2x svg-icon-dark d-block text-center text-white">
-                                           <span id="iuyum_lost_span" style="font-size: 45px;">0</span>
-                                           <br>
-                                           <span class="text-white font-weight-bold font-size-h4">İş 1</span>
-                                        </span>
-
-                                    </div>
-                                </div>
-
-                                <div class="row m-0">
-                                    <div id="job_1_card" style="@if($response['iuyum']['terkedilmis'] - $response['iuyum']['callback'] >= 5) background-color: #cc0000 @elseif($response['iuyum']['terkedilmis'] - $response['iuyum']['callback'] > 0) background-color: #ff5900; @else background-color: #505050; @endif" class="col px-6 py-8 rounded-xl mr-7 mb-7">
-                                       <span class="svg-icon svg-icon-2x svg-icon-dark d-block text-center text-white">
-                                           <span id="iuyum_lost_span" style="font-size: 45px;">0</span>
-                                           <br>
-                                           <span class="text-white font-weight-bold font-size-h4">İş 1</span>
-                                        </span>
-
-                                    </div>
-                                    <div id="job_1_card" style="@if($response['iuyum']['terkedilmis'] - $response['iuyum']['callback'] >= 5) background-color: #cc0000 @elseif($response['iuyum']['terkedilmis'] - $response['iuyum']['callback'] > 0) background-color: #ff5900; @else background-color: #505050; @endif" class="col px-6 py-8 rounded-xl mr-7 mb-7">
-                                       <span class="svg-icon svg-icon-2x svg-icon-dark d-block text-center text-white">
-                                           <span id="iuyum_lost_span" style="font-size: 45px;">0</span>
-                                           <br>
-                                           <span class="text-white font-weight-bold font-size-h4">İş 1</span>
-                                        </span>
-
-                                    </div>
-                                </div>
-
-                                <div class="row m-0">
-                                    <div id="job_1_card" style="@if($response['iuyum']['terkedilmis'] - $response['iuyum']['callback'] >= 5) background-color: #cc0000 @elseif($response['iuyum']['terkedilmis'] - $response['iuyum']['callback'] > 0) background-color: #ff5900; @else background-color: #505050; @endif" class="col px-6 py-8 rounded-xl mr-7 mb-7">
-                                       <span class="svg-icon svg-icon-2x svg-icon-dark d-block text-center text-white">
-                                           <span id="iuyum_lost_span" style="font-size: 45px;">0</span>
-                                           <br>
-                                           <span class="text-white font-weight-bold font-size-h4">İş 1</span>
-                                        </span>
-
-                                    </div>
-                                    <div id="job_1_card" style="@if($response['iuyum']['terkedilmis'] - $response['iuyum']['callback'] >= 5) background-color: #cc0000 @elseif($response['iuyum']['terkedilmis'] - $response['iuyum']['callback'] > 0) background-color: #ff5900; @else background-color: #505050; @endif" class="col px-6 py-8 rounded-xl mr-7 mb-7">
-                                       <span class="svg-icon svg-icon-2x svg-icon-dark d-block text-center text-white">
-                                           <span id="iuyum_lost_span" style="font-size: 45px;">0</span>
-                                           <br>
-                                           <span class="text-white font-weight-bold font-size-h4">İş 1</span>
-                                        </span>
-
-                                    </div>
                                 </div>
 
                             </div>
@@ -466,10 +394,11 @@
 
     <script>
 
-        setInterval(function () {
+        function callApi()
+        {
             $.ajax({
                 type: "post",
-                url: "/data",
+                url: "/CallQuees",
                 dataType: 'json',
                 data: {
                     _token: '{{ csrf_token() }}'
@@ -676,6 +605,58 @@
                     console.log('Veriler Alınamadı');
                 }
             });
+
+            $.ajax({
+                type: "get",
+                url: "/TvScreenGetJobList",
+                dataType: 'json',
+                data: {
+                    _token: '{{ csrf_token() }}'
+                },
+                success: function (result) {
+
+                    console.log(result.responseBody);
+
+                    $("#total_job_span").html(result.totalNewJobs);
+
+                    $("#all_jobs_row").html('');
+                    $.each(result.responseBody, function (index) {
+                        if (
+                            result.responseBody[index].baslik == "İ-Dönüşüm Yeni" ||
+                            result.responseBody[index].baslik == "Eko Cari Yeni" ||
+                            result.responseBody[index].baslik == "İys Yeni" ||
+                            result.responseBody[index].baslik == "Uyum Yedek Yeni"
+                        ) {
+                            if (result.responseBody[index].sayi > 0) {
+                                var cardbgcolor = '#ff5900';
+                            } else {
+                                var cardbgcolor = '#505050';
+                            }
+                        } else {
+                            var cardbgcolor = '#505050';
+                        }
+                        $("#all_jobs_row").append('<div class="col-xl-6">\n' +
+                            '    <div id="job_1_card" style="background-color: ' + cardbgcolor + '" class="col px-6 py-8 rounded-xl mr-7 mb-7 col-xl-12 float-left">\n' +
+                            '        <span class="svg-icon svg-icon-2x svg-icon-dark d-block text-center text-white">\n' +
+                            '           <span id="" style="font-size: 45px;">' + result.responseBody[index].sayi + '</span>\n' +
+                            '           <br>\n' +
+                            '           <span class="text-white font-weight-bold font-size-h4">' + result.responseBody[index].baslik + '</span>\n' +
+                            '        </span>\n' +
+                            '    </div>\n' +
+                            '</div>');
+                    });
+
+                },
+                error: function () {
+                    console.log('Veriler Alınamadı');
+                }
+            });
+        }
+
+        callApi();
+
+        setInterval(function () {
+            callApi();
         }, 10000);
 
     </script>
