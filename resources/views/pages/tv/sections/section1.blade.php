@@ -134,6 +134,25 @@
                                     </div>
                                 </div>
 
+                                <div class="row m-0">
+                                    <div id="yedek_waiting_card" class="col px-6 py-8 rounded-xl mr-7 mb-7">
+                                       <span class="svg-icon svg-icon-2x svg-icon-dark d-block text-center text-white">
+                                           <span id="yedek_waiting_span" style="font-size: 45px;">--</span>
+                                           <br>
+                                           <span class="text-white font-weight-bold font-size-h4">Yedek</span>
+                                        </span>
+
+                                    </div>
+                                    <div id="xxx_waiting_card" class="col px-6 py-8 rounded-xl mr-7 mb-7">
+                                       <span class="svg-icon svg-icon-2x svg-icon-dark d-block text-center text-white">
+                                           <span id="xxx_waiting_span" style="font-size: 45px;"></span>
+                                           <br>
+                                           <span class="text-white font-weight-bold font-size-h4"></span>
+                                        </span>
+
+                                    </div>
+                                </div>
+
                             </div>
                             <!--end::Stats-->
                         </div>
@@ -258,6 +277,25 @@
                                            <span id="ekocari_lost_span" style="font-size: 45px;">--</span>
                                            <br>
                                            <span class="text-white font-weight-bold font-size-h4">Ekocari</span>
+                                        </span>
+
+                                    </div>
+                                </div>
+
+                                <div class="row m-0">
+                                    <div id="yedek_lost_card" class="col px-6 py-8 rounded-xl mr-7 mb-7">
+                                       <span class="svg-icon svg-icon-2x svg-icon-dark d-block text-center text-white">
+                                           <span id="yedek_lost_span" style="font-size: 45px;">--</span>
+                                           <br>
+                                           <span class="text-white font-weight-bold font-size-h4">Yedek</span>
+                                        </span>
+
+                                    </div>
+                                    <div id="xxx_lost_card" class="col px-6 py-8 rounded-xl mr-7 mb-7">
+                                       <span class="svg-icon svg-icon-2x svg-icon-dark d-block text-center text-white">
+                                           <span id="xxx_lost_span" style="font-size: 45px;"></span>
+                                           <br>
+                                           <span class="text-white font-weight-bold font-size-h4"></span>
                                         </span>
 
                                     </div>
@@ -404,6 +442,7 @@
                     _token: '{{ csrf_token() }}'
                 },
                 success: function (result) {
+
                     var iuyum = result.kuyruklar.filter(quee => quee.ad == "Iuyum")[0];
                     var efaturaearsiv = result.kuyruklar.filter(quee => quee.ad == "EfaturaEarsiv")[0];
                     var hesapaktivasyon = result.kuyruklar.filter(quee => quee.ad == "HesapAktivasyon")[0];
@@ -412,6 +451,7 @@
                     var edefter = result.kuyruklar.filter(quee => quee.ad == "Edefter")[0];
                     var edefterimzalama = result.kuyruklar.filter(quee => quee.ad == "EdefterImzalama")[0];
                     var ekocari = result.kuyruklar.filter(quee => quee.ad == "EkoCari")[0];
+                    var yedek = result.kuyruklar.filter(quee => quee.ad == "Yedek")[0];
 
                     // Iuyum
                     $("#iuyum_waiting_span").html(iuyum.bekleyen);
@@ -557,6 +597,24 @@
                         $("#ekocari_lost_card").css('background-color','#505050');
                     }
 
+                    // Yedek
+                    $("#yedek_waiting_span").html(yedek.bekleyen);
+                    $("#yedek_lost_span").html(yedek.terkedilmis - yedek.callback);
+                    if (yedek.bekleyen > 5) {
+                        $("#yedek_waiting_card").css('background-color','#cc0000');
+                    } else if (yedek.bekleyen > 0) {
+                        $("#yedek_waiting_card").css('background-color','#ff5900');
+                    } else {
+                        $("#yedek_waiting_card").css('background-color','#505050');
+                    }
+                    if (yedek.terkedilmis - yedek.callback > 5) {
+                        $("#yedek_lost_card").css('background-color','#cc0000');
+                    } else if (yedek.terkedilmis - yedek.callback > 0) {
+                        $("#yedek_lost_card").css('background-color','#ff5900');
+                    } else {
+                        $("#yedek_lost_card").css('background-color','#505050');
+                    }
+
                     var total_quee =
                         iuyum.bekleyen +
                         efaturaearsiv.bekleyen +
@@ -565,7 +623,8 @@
                         eirsaliyedestek.bekleyen +
                         edefter.bekleyen +
                         edefterimzalama.bekleyen +
-                        ekocari.bekleyen;
+                        ekocari.bekleyen +
+                        yedek.bekleyen;
 
                     var total_lost = (iuyum.terkedilmis - iuyum.callback) +
                         (efaturaearsiv.terkedilmis - efaturaearsiv.callback) +
@@ -574,7 +633,8 @@
                         (eirsaliyedestek.terkedilmis - eirsaliyedestek.callback) +
                         (edefter.terkedilmis - edefter.callback) +
                         (edefterimzalama.terkedilmis - edefterimzalama.callback) +
-                        (ekocari.terkedilmis - ekocari.callback);
+                        (ekocari.terkedilmis - ekocari.callback) +
+                        (yedek.terkedilmis - yedek.callback);
 
                     $("#total_quee_span").html(total_quee);
                     $("#kt_mixed_widget_1_chart_bottom").removeClass('bg-dark-75 mydisco');
@@ -608,14 +668,12 @@
 
             $.ajax({
                 type: "get",
-                url: "/TvScreenGetJobList",
+                url: "/GetJobList",
                 dataType: 'json',
                 data: {
                     _token: '{{ csrf_token() }}'
                 },
                 success: function (result) {
-
-                    console.log(result.responseBody);
 
                     $("#total_job_span").html(result.totalNewJobs);
 

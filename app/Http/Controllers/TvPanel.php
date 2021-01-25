@@ -27,6 +27,11 @@ class TvPanel extends Controller
         return redirect()->back()->with(['data_type' => 'success', 'data' => 'Televizyon Başarıyla Oluşturuldu']);
     }
 
+    public function Abandons()
+    {
+        return view('pages.tv.abandon');
+    }
+
     public function Section1()
     {
         return view('pages.tv.sections.section1');
@@ -35,6 +40,21 @@ class TvPanel extends Controller
     public function Section2()
     {
         return view('pages.tv.sections.section2');
+    }
+
+    public function Section3()
+    {
+        return view('pages.tv.sections.section3');
+    }
+
+    public function Section4()
+    {
+        return view('pages.tv.sections.section4');
+    }
+
+    public function Section5()
+    {
+        return view('pages.tv.sections.section5');
     }
 
 

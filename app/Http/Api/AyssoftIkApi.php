@@ -12,9 +12,18 @@ class AyssoftIkApi extends ApiBase
         $this->_token = env('AYSSOFT_IK_API_TOKEN', '');
     }
 
-    public function ShiftEmployeeToday()
+    public function ShiftEmployeesToday()
     {
         $endpoint = "Shift/ShiftEmployeeToday";
+        $headers = [
+            '_token' => $this->_token,
+        ];
+        return $this->callApi($this->baseUrl . $endpoint, 'get', $headers);
+    }
+
+    public function ShiftEmployeesLastSunday()
+    {
+        $endpoint = "Shift/ShiftEmployeesLastSunday";
         $headers = [
             '_token' => $this->_token,
         ];
@@ -24,6 +33,15 @@ class AyssoftIkApi extends ApiBase
     public function TodayPermittedEmployees()
     {
         $endpoint = "Permit/TodayPermittedEmployees";
+        $headers = [
+            '_token' => $this->_token,
+        ];
+        return $this->callApi($this->baseUrl . $endpoint, 'get', $headers);
+    }
+
+    public function TodayOvertimePermittedEmployees()
+    {
+        $endpoint = "Permit/TodayOvertimePermittedEmployees";
         $headers = [
             '_token' => $this->_token,
         ];

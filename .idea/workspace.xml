@@ -20,25 +20,123 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6db55123-b21e-4406-8089-b27698395657" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Api/ApiBase.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Api/AyssoftIkApi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Api/AyssoftTakipApi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/Main.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/CallApi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayssoftcrm.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lastupdates.rar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newcards.rar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/abanodns_update_7.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Exam/ExamAnswerController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Exam/ExamController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Exam/ExamQuestionController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Survey/SurveyAnswerController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Survey/SurveyController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Survey/SurveyJobGroupController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Survey/SurveyQuestionController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SurveyController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Team/TeamController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TeamController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TodoList/TodoListController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TodoListController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UyumCrm/Constant.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UyumCrm/Group.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UyumCrm/Manage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UyumCrmController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/TokenControl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Exam/ExamStoreRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Exam/ExamUpdateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/ExamAnswerStoreRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/ExamAnswerUpdateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/ExamQuestionStoreRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/ExamQuestionUpdateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Survey/SurveyAnswerStoreRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Survey/SurveyAnswerUpdateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Survey/SurveyJobGroupStoreRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Survey/SurveyJobGroupUpdateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Survey/SurveyQuestionStoreRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Survey/SurveyQuestionUpdateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Survey/SurveyStoreRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Survey/SurveyUpdateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Team/TeamStoreRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Team/TeamUpdateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/TodoList/TodoListStoreRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/TodoList/TodoListUpdateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/User/UserStoreRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/User/UserUpdateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Responses/Response.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/TvPanelService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/View/Composers/AuthUser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards_update_4.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards_update_5.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dahili_kontrol_2_update.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/exam/answer/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/exam/answer/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/exam/answer/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/exam/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/exam/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/exam/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/exam/question/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/exam/question/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/exam/question/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/survey/answer/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/survey/answer/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/survey/answer/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/survey/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/survey/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/survey/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/survey/job-group/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/survey/job-group/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/survey/job-group/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/survey/question/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/survey/question/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/survey/question/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/team/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/team/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/team/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/todo-list/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/todo-list/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/todo-list/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/tv/abandon.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/tv/sections/section3.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/tv/sections/section4.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/tv/sections/section5.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/user/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/user/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/user/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/user/notes.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/uyum-crm/constant/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/uyum-crm/group/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/uyum-crm/manage/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/santral_dahili_kontrol.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/santral_dahili_kontrol_2.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/section2_break_time_update.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/section2_break_time_update_2.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/section2_break_time_update_3.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/section2_break_time_update_5.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/section4_api_time_update.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/section4_api_update.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/section4_arrows_update.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/section4_gradient.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/section4_update.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/section4_update2.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/section4_update_5.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/section4_update_6.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yedek_abandons_update.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yedek_call_quee_update.rar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Api/AyssoftIkApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/AyssoftIkApi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Api/AyssoftTakipApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/AyssoftTakipApi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/Main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CallApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CallApi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TvPanel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TvPanel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Helpers/General.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Helpers/General.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_20_113704_create_televisions_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ayssoftcrm.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lastupdates.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/newcards.rar" beforeDir="false" afterPath="$PROJECT_DIR$/newcards.rar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/curl.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/curl.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/tv/sections/section1.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/tv/sections/section1.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/tv/sections/section2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/tv/sections/section2.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
@@ -52,6 +150,13 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -177,9 +282,10 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/pages" />
+    <property name="last_opened_file_path" value="$USER_HOME$/helping" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -187,18 +293,30 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\talha\PhpstormProjects\ayssoftcrm\resources\views\pages\tv\sections" />
+      <recent name="C:\Users\talha\PhpstormProjects\ayssoftcrm\resources\views\pages\uyum-crm\constant" />
+      <recent name="C:\Users\talha\PhpstormProjects\ayssoftcrm\resources\views\pages\uyum-crm\group" />
+      <recent name="C:\Users\talha\PhpstormProjects\ayssoftcrm\resources\views\pages\uyum-crm\manage" />
+      <recent name="C:\Users\talha\PhpstormProjects\ayssoftcrm\resources\views\pages\uyum-crm" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\talha\PhpstormProjects\ayssoftcrm\app\Http\Controllers\Exam" />
+      <recent name="C:\Users\talha\PhpstormProjects\ayssoftcrm\app\Http\Controllers\User" />
+      <recent name="C:\Users\talha\PhpstormProjects\ayssoftcrm\app\Http\Requests\User" />
+      <recent name="C:\Users\talha\PhpstormProjects\ayssoftcrm\resources\views\pages\tv" />
       <recent name="C:\Users\talha\PhpstormProjects\ayssoftcrm\resources\views\pages\tv\tvs" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\talha\PhpstormProjects\ayssoftcrm\resources\views\pages" />
-      <recent name="C:\Users\talha\PhpstormProjects\ayssoftcrm\app\Http\Api" />
-      <recent name="C:\Users\talha\PhpstormProjects\ayssoftcrm\app\Http\Helpers" />
-      <recent name="C:\Users\talha\PhpstormProjects\ayssoftcrm\app\Http\Controllers\Api" />
-      <recent name="C:\Users\talha\PhpstormProjects\ayssoftcrm\resources\views\pages\tv\sections" />
-    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="-v" />
+      <command value="php -v" />
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -223,6 +341,53 @@
       <workItem from="1606207651041" duration="10093000" />
       <workItem from="1606311224059" duration="607000" />
       <workItem from="1606370102767" duration="8765000" />
+      <workItem from="1606471290368" duration="8475000" />
+      <workItem from="1606551573969" duration="7119000" />
+      <workItem from="1606716179804" duration="665000" />
+      <workItem from="1606802765533" duration="5287000" />
+      <workItem from="1606814809139" duration="15116000" />
+      <workItem from="1606888941686" duration="2117000" />
+      <workItem from="1606975130227" duration="2532000" />
+      <workItem from="1606997746937" duration="580000" />
+      <workItem from="1606999196976" duration="1331000" />
+      <workItem from="1607061665311" duration="5688000" />
+      <workItem from="1607098741946" duration="19000" />
+      <workItem from="1607320861049" duration="4393000" />
+      <workItem from="1607327227062" duration="2759000" />
+      <workItem from="1607413697505" duration="2951000" />
+      <workItem from="1607524540319" duration="607000" />
+      <workItem from="1607581375913" duration="5892000" />
+      <workItem from="1607589130181" duration="13683000" />
+      <workItem from="1607666331155" duration="7519000" />
+      <workItem from="1607676325302" duration="1355000" />
+      <workItem from="1607679489354" duration="11088000" />
+      <workItem from="1607758545394" duration="704000" />
+      <workItem from="1607804648965" duration="19000" />
+      <workItem from="1607925445022" duration="13145000" />
+      <workItem from="1608019676328" duration="6124000" />
+      <workItem from="1608215162120" duration="1083000" />
+      <workItem from="1608282834999" duration="5571000" />
+      <workItem from="1608290832931" duration="3844000" />
+      <workItem from="1608297989736" duration="5842000" />
+      <workItem from="1608316036954" duration="635000" />
+      <workItem from="1608379832539" duration="1914000" />
+      <workItem from="1608452760168" duration="33000" />
+      <workItem from="1608558388888" duration="702000" />
+      <workItem from="1608564634049" duration="907000" />
+      <workItem from="1608632162811" duration="1647000" />
+      <workItem from="1608710183114" duration="1327000" />
+      <workItem from="1608730047714" duration="552000" />
+      <workItem from="1608790132886" duration="485000" />
+      <workItem from="1609920551764" duration="1254000" />
+      <workItem from="1610971693772" duration="615000" />
+      <workItem from="1610973253419" duration="1315000" />
+      <workItem from="1610975097812" duration="3033000" />
+      <workItem from="1611057289743" duration="1362000" />
+      <workItem from="1611121420637" duration="802000" />
+      <workItem from="1611216891112" duration="2831000" />
+      <workItem from="1611391246368" duration="2505000" />
+      <workItem from="1611399736781" duration="1788000" />
+      <workItem from="1611422510718" duration="177000" />
     </task>
     <servers />
   </component>
@@ -243,43 +408,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="586" y="218" key="#Inspections" timestamp="1606376467377">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="586" y="218" key="#Inspections/0.0.1920.1080@0.0.1920.1080" timestamp="1606376467377" />
-    <state x="414" y="195" width="1092" height="752" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606377205417">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="414" y="195" width="1092" height="752" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606377205417" />
-    <state x="745" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606371907461">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="745" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606371907461" />
-    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606213816274">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606213816274" />
-    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1606371551474">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1606371551474" />
-    <state x="540" y="275" key="IDE.errors.dialog" timestamp="1606377152796">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="540" y="275" key="IDE.errors.dialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606377152796" />
-    <state x="694" y="263" key="NewPhpClassDialog" timestamp="1605953186837">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="694" y="263" key="NewPhpClassDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1605953186837" />
-    <state x="667" y="273" width="585" height="534" key="find.popup" timestamp="1605795946852">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="667" y="273" width="585" height="534" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1605795946852" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1605960499899">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1605960499899" />
   </component>
 </project>

@@ -18,6 +18,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::namespace('App\\Http\\Controllers\\Api')->group(function () {
-
+Route::middleware(['TokenControl'])->namespace('App\\Http\\Controllers\\Api')->group(function () {
+    Route::any('GetSingleCallStatistics','Main@SingleCallStatistics');
+//    Route::any('JobStatistics','Main@JobStatistics');
 });

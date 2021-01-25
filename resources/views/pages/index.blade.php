@@ -1,17 +1,13 @@
 @extends('layouts.master')
-@section('title', 'Anasayfa')
+@section('title', 'Kontrol Paneli')
 @php(setlocale(LC_ALL, 'tr_TR.UTF-8'))
 
 @section('content')
 
     <div class="row">
-
         <div class="col-xl-12">
-
-            Anasayfa
-
+            Kontrol Paneli
         </div>
-
     </div>
 
 @endsection

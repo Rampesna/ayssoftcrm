@@ -60,4 +60,31 @@ class AyssoftTakipApi extends ApiBase
         return $this->callApi($this->baseUrl . $endpoint, 'get', $headers);
     }
 
+    public function GetPointDay()
+    {
+        $endpoint = "TvScreen/GetPointDay";
+        $headers = [
+            'Authorization' => 'Bearer ' . $this->_token,
+        ];
+        return $this->callApi($this->baseUrl . $endpoint, 'get', $headers);
+    }
+
+    public function GetPointWeek()
+    {
+        $endpoint = "TvScreen/GetPointWeek";
+        $headers = [
+            'Authorization' => 'Bearer ' . $this->_token,
+        ];
+        return $this->callApi($this->baseUrl . $endpoint, 'get', $headers);
+    }
+
+    public function GetMonthJobRanking()
+    {
+        $endpoint = "TvScreen/GetMonthJobRanking";
+        $headers = [
+            'Authorization' => 'Bearer ' . $this->_token,
+        ];
+        return $this->callApi($this->baseUrl . $endpoint, 'get', $headers);
+    }
+
 }
