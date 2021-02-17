@@ -62,8 +62,12 @@ Route::middleware([])->namespace('App\\Http\\Controllers')->group(function () {
             Route::get('section/1', 'TvPanel@Section1')->name('tv.section.1');
             Route::get('section/2', 'TvPanel@Section2')->name('tv.section.2');
             Route::get('section/3', 'TvPanel@Section3')->name('tv.section.3');
-            Route::get('section/4', 'TvPanel@Section4')->name('tv.section.4');
-            Route::get('section/5', 'TvPanel@Section5')->name('tv.section.5');
+            Route::get('section/4', function () {
+                return abort(404);
+            })->name('tv.section.4');
+            Route::get('section/5', function () {
+                return abort(404);
+            })->name('tv.section.5');
 
         });
     });

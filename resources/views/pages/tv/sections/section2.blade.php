@@ -804,6 +804,7 @@
                                             } else {
                                                 if (quees.dahililer[getCallUserIndex].pausedreason == 10) {
                                                     leftIcon = '<i class="fas fa-phone-alt icon-2x text-white" style="margin-left: -20px"></i>';
+                                                    bgcolor = 'darkslateblue';
                                                     if (quees.dahililer[getCallUserIndex].talkingnum == "") {
                                                         callStatus = breaks[quees.dahililer[getCallUserIndex].pausedreason];
                                                         time = quees.dahililer[getCallUserIndex].lastpausedtime;
